@@ -1,4 +1,7 @@
-.background-sidebar{
+li{
+margin: 1.5rem;
+}
+.background{
     background-color: rgb(0, 0, 0);
     height: 100vh;
 }
