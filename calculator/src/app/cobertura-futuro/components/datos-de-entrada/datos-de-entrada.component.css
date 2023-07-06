@@ -1,0 +1,9 @@
+.cobertura {
+    display: inline-block;
+    border: 1px solid rgb(159, 158, 158);
+    padding: 5px;
+}
+.boton{
+    display: inline;
+    margin-right: 20px;
+}
