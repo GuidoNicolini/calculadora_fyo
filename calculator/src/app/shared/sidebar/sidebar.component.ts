@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sidebar',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class SidebarComponent {
 
+  constructor(private router:Router){}
+
+  irFuturo(){
+    this.router.navigate(["/futuro"])
+  }
+  irCoberturaFuturo(){
+    this.router.navigate(["/cobertura-futuros"])
+  }
 }
