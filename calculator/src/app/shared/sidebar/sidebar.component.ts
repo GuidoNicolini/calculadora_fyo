@@ -13,6 +13,7 @@ export class SidebarComponent {
   irFuturo(){
     this.router.navigate(["/futuro"])
   }
+  
   irCoberturaFuturo(){
     this.router.navigate(["/cobertura-futuros"])
   }
