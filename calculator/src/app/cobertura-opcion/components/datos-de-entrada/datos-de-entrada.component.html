@@ -1,0 +1,55 @@
+<form [formGroup]="myForm" (ngSubmit)="submitForm()">
+    <div class="form-group">
+        <label>Cantidad</label>
+        <input class="form-control" type="number" formControlName="cantidad">
+    </div>
+    <br>
+    <div class="form-group">
+        <label>Strike</label>
+        <input class="form-control" type="number" formControlName="strike">
+    </div>
+    <br>
+    <div class="form-group">
+        <label>Prima</label>
+        <input class="form-control" type="number" formControlName="prima">
+    </div>
+    <br>
+    <div class="form-group">
+        <label>Futuro final</label>
+        <input class="form-control" type="number" formControlName="futuroFinal">
+    </div>
+    <br>
+    <div class="form-group">
+        <label>Spot final</label>
+        <input class="form-control" type="number" formControlName="spotFinal">
+    </div>
+    <br>
+    <div class="cobertura">
+
+        <label>Tipo de Cobertura</label>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" value="vendedora" formControlName="tipoCobertura"
+                id="radioVendedora">
+            <label class="form-check-label" for="radioVendedora">
+                Vendedora
+            </label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" value="compradora" formControlName="tipoCobertura"
+                id="radioCompradora">
+            <label class="form-check-label" for="radioCompradora">
+                Compradora
+            </label>
+        </div>
+    </div>
+    <br>
+    <br>
+
+    <button class="btn btn-primary boton" type="submit">Submit</button>
+
+    <div class="alerta text-success font-weight-bold h3 boton" *ngIf="actualizado">
+        Datos Actualizados
+    </div>
+
+</form>

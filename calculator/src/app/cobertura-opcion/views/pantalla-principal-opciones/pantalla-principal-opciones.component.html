@@ -1,0 +1,48 @@
+<h1>Cobertura Opciones</h1>
+
+<div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button text-uppercase" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Parametros
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+         <app-datos-de-entrada></app-datos-de-entrada>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<br>
+
+  <button class="btn btn-primary" (click)="actualizarDatos()">ACTUALIZAR</button>
+  <div class="conteiner" *ngIf="mostrar">
+
+    <div class="row">
+        <div class="col">
+            <ul class="list-group">
+                <li class="list-group-item">Resultado Final: {{ resultadoFinal }}</li>
+                <li class="list-group-item">Resultado Spot: {{ resultadoSpot }}</li>
+                <li class="list-group-item">Resultado Futuro: {{ resultadoFuturo }}</li>
+                <li class="list-group-item">Base: {{ base }}</li>
+                <li class="list-group-item">Breakeven: {{ breakheaven }}</li>
+                <li class="list-group-item">Valor intriseco: {{ valorIntrinseco }}</li>
+                <li class="list-group-item">Valor extrinseco: {{ valorExtrinseco }}</li>
+                <li class="list-group-item">Estado: {{ estado }}</li>
+              </ul>
+        </div>
+        <div class="col">
+            <ul class="list-group">
+                <li class="list-group-item">Cantidad: {{ datos.cantidad }}</li>
+                <li class="list-group-item">Strike: {{ datos.strike }}</li>
+                <li class="list-group-item">Prima: {{ datos.prima }}</li>
+                <li class="list-group-item">Futuro Final: {{ datos.futuroFinal }}</li>
+                <li class="list-group-item">Spot Final: {{ datos.spotFinal }}</li>
+                <li class="list-group-item">Tipo de Cobertura: {{ datos.tipoCobertura | uppercase }}</li>
+            </ul>
+        </div>
+    </div>
+
+  </div>
