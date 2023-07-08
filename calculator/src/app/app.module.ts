@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { CoberturaFuturoModule } from './cobertura-futuro/cobertura-futuro.module';
 import { AppRoutingModule } from './app-routing.module';
+import { CoberturaOpcionModule } from './cobertura-opcion/cobertura-opcion.module';
+
 
 @NgModule({
   declarations: [
@@ -16,6 +18,7 @@ import { AppRoutingModule } from './app-routing.module';
   imports: [
     BrowserModule,
     CoberturaFuturoModule,
+    CoberturaOpcionModule,
     AppRoutingModule
 
   ],

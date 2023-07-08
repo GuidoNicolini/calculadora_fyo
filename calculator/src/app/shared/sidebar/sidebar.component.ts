@@ -17,4 +17,8 @@ export class SidebarComponent {
   irCoberturaFuturo(){
     this.router.navigate(["/cobertura-futuros"])
   }
+
+  irCoberturaOpcion(){
+    this.router.navigate(["/cobertura-opciones"])
+  }
 }
